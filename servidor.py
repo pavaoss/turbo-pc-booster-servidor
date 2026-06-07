@@ -41,17 +41,17 @@ except ImportError:
 
 from licenca import gerar_key, validar_key
 
-ADMIN_TOKEN = os.environ.get("ADMIN_TOKEN", "troque-este-token")
-MP_TOKEN = os.environ.get("MP_ACCESS_TOKEN", "")
+ADMIN_TOKEN = os.environ.get("ADMIN_TOKEN", "Theo20p11")
+MP_TOKEN = os.environ.get("MP_ACCESS_TOKEN", "APP_USR-4807753332506280-060416-c6e66e0e1bae55314f87e35ab4e82af4-98365695")
 DB = os.path.join(os.path.dirname(os.path.abspath(__file__)), "licencas.db")
 
 # E-mail (SMTP) para enviar a key ao comprador.
 # Gmail: SMTP_HOST=smtp.gmail.com / SMTP_PORT=587 / SMTP_USER=seu@gmail.com /
 #        SMTP_PASS = "senha de app" (não a senha normal; gere em myaccount.google.com).
-SMTP_HOST = os.environ.get("SMTP_HOST", "")
+SMTP_HOST = os.environ.get("SMTP_HOST", "smtp.gmail.com")
 SMTP_PORT = int(os.environ.get("SMTP_PORT", "587"))
-SMTP_USER = os.environ.get("SMTP_USER", "")
-SMTP_PASS = os.environ.get("SMTP_PASS", "")
+SMTP_USER = os.environ.get("SMTP_USER", "turbopcltda@gmail.com")
+SMTP_PASS = os.environ.get("SMTP_PASS", "vnok oubc tdhh ivpz")
 SMTP_FROM = os.environ.get("SMTP_FROM", SMTP_USER or "no-reply@turbopcbooster")
 
 # Download do app: aponte para o .exe local OU para uma URL externa (Drive, etc.)
@@ -60,9 +60,9 @@ APP_EXE = os.environ.get("APP_EXE",
 DOWNLOAD_URL = os.environ.get("DOWNLOAD_URL", "")
 
 # Suporte/comunidade e endereço público do site (para cartão de crédito)
-DISCORD_URL = os.environ.get("DISCORD_URL", "")
+DISCORD_URL = os.environ.get("DISCORD_URL", "https://discord.gg/bTz4VptTwQ")
 WHATSAPP_URL = os.environ.get("WHATSAPP_URL", "")
-SITE_URL = os.environ.get("SITE_URL", "http://localhost:8000")
+SITE_URL = os.environ.get("SITE_URL", "https://hyperfps.onrender.com")
 
 # Pushover: notificação no seu celular quando vender.
 # Crie conta em pushover.net, pegue seu "User Key" e crie um "Application" p/ o Token.
