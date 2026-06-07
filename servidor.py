@@ -104,10 +104,8 @@ from fastapi.middleware.cors import CORSMiddleware
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-    "https://hyper-fps.vercel.app",
-    "https://hyperfps.shop",
-    "https://www.hyperfps.shop"
-]
+        "https://hyperfps.shop/"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
