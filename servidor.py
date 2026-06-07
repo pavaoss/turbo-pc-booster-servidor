@@ -29,6 +29,7 @@ import urllib.parse
 import urllib.request
 from datetime import datetime
 from email.message import EmailMessage
+from fastapi.middleware.cors import CORSMiddleware
 
 try:
     from fastapi import FastAPI, Header, HTTPException
@@ -98,6 +99,17 @@ FEATURES = [
 ]
 
 app = FastAPI(title="HyperFPS")
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "https://hyper-fps.vercel.app"
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 def conectar():
