@@ -79,7 +79,7 @@ PLANOS = {
                  "otimizacoes": 12, "subtitulo": "Mais FPS nos jogos"},
     "pro":      {"nome": "Pro",      "nivel": 3, "dias": 30, "preco": 36.97, "preco_de": 44.90,
                  "otimizacoes": 18, "subtitulo": "O kit completo de gamer", "destaque": True},
-    "ultimate": {"nome": "Ultimate", "nivel": 4, "dias": 30, "preco": 60,99, "preco_de": 82,99,
+    "ultimate": {"nome": "Ultimate", "nivel": 4, "dias": 30, "preco": 60.99, "preco_de": 82.99,
                  "otimizacoes": 20, "subtitulo": "Tudo, sem limite"},
 }
 
