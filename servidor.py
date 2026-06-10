@@ -73,13 +73,13 @@ PUSHOVER_USER = os.environ.get("PUSHOVER_USER", "")
 # Planos por NÍVEL de funcionalidade (nivel 1..4). Preços em R$ — edite à vontade.
 # preco_de = preço "cheio" riscado (sensação de promoção). Apague p/ não mostrar.
 PLANOS = {
-    "basico":   {"nome": "Básico",   "nivel": 1, "dias": 30, "preco":  9.90, "preco_de": 19.90,
+    "basico":   {"nome": "Básico",   "nivel": 1, "dias": 30, "preco":  12.00, "preco_de": 19.90,
                  "otimizacoes": 5,  "subtitulo": "Pra dar uma aliviada no PC"},
-    "turbo":    {"nome": "Turbo",    "nivel": 2, "dias": 30, "preco": 16.90, "preco_de": 29.90,
+    "turbo":    {"nome": "Turbo",    "nivel": 2, "dias": 30, "preco": 21.90, "preco_de": 29.90,
                  "otimizacoes": 12, "subtitulo": "Mais FPS nos jogos"},
-    "pro":      {"nome": "Pro",      "nivel": 3, "dias": 30, "preco": 24.90, "preco_de": 44.90,
+    "pro":      {"nome": "Pro",      "nivel": 3, "dias": 30, "preco": 36.97, "preco_de": 44.90,
                  "otimizacoes": 18, "subtitulo": "O kit completo de gamer", "destaque": True},
-    "ultimate": {"nome": "Ultimate", "nivel": 4, "dias": 30, "preco": 34.90, "preco_de": 59.90,
+    "ultimate": {"nome": "Ultimate", "nivel": 4, "dias": 30, "preco": 60,99, "preco_de": 82,99,
                  "otimizacoes": 20, "subtitulo": "Tudo, sem limite"},
 }
 
