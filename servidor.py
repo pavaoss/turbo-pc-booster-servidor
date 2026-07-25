@@ -464,7 +464,7 @@ def _cupom_percent(codigo):
         row = con.execute("SELECT percent, ativo FROM cupons WHERE codigo=?",
                           (codigo.strip().upper(),)).fetchone()
         con.close()
-        if row and row[1] == 1 and 0 < row[0] < 100:
+        
             return int(row[0])
     except Exception:
         pass
