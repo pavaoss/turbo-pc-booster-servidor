@@ -63,7 +63,7 @@ DOWNLOAD_URL = os.environ.get("DOWNLOAD_URL", "")
 # Suporte/comunidade e endereço público do site (para cartão de crédito)
 DISCORD_URL = os.environ.get("DISCORD_URL", "https://discord.gg/bTz4VptTwQ")
 WHATSAPP_URL = os.environ.get("WHATSAPP_URL", "")
-SITE_URL = os.environ.get("SITE_URL", "https://hyperfps.onrender.com")
+SITE_URL = os.environ.get("SITE_URL", "https://turbo-pc-booster-servidor.onrender.com/")
 
 # Pushover: notificação no seu celular quando vender.
 # Crie conta em pushover.net, pegue seu "User Key" e crie um "Application" p/ o Token.
