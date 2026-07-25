@@ -475,6 +475,13 @@ def _cupom_percent(codigo):
 def ver_cupom(codigo: str):
     pct = _cupom_percent(codigo)
     return {"ok": True, "percent": pct} if pct else {"ok": False, "msg": "Cupom inválido."}
+@app.get("/depoimentos")
+def depoimentos_publico():
+    rows = get_depoimentos()
+    return {"ok": True, "depoimentos": [
+        {"nome": r[0], "txt": r[1], "e": r[2]} for r in rows
+    ]}
+
 
 
 @app.post("/admin/cupom/criar")
